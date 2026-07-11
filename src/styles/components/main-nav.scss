@@ -1,0 +1,36 @@
+.main-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 42px;
+        padding: 20px;
+    }
+
+    &__link {
+        font-size: 20px;
+        line-height: 20px;
+        color: $color-black;
+        transition: color $transition-300;
+        position: relative;
+
+        &:hover, 
+        &:focus-visible {
+            color: $color-dark-carnation;
+        }
+
+        &::before {
+            width: calc(100% + 36px);
+            height: calc(100% + 12px);
+            content: "";
+            position: absolute;
+            right: -18px;
+            top: -4px;
+        }
+    }
+}

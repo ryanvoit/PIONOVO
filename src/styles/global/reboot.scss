@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  @apply h-full antialiased
+}
+
+body {
+  @apply min-h-[100vh] flex flex-col;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $ff-main;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-black;
+  background-color: $color-white;
+}
+
+// .layout {
+ // background: linear-gradient(180deg, $color-black 0%, $color-nero-70 100%), linear-gradient(180deg, $color-dodger-blue-90 0%, $color-biloba-flower-90 100%);
+ // font-family: $ff-play;
+  // @apply relative min-h-[100vh]
+// }
+
+main {
+  flex-grow: 1;
+  padding: 180px 0 0 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+

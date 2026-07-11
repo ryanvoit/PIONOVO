@@ -1,0 +1,205 @@
+.header {
+    padding: 0;
+    background-color: $color-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+    $root: &;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: $color-black-20;
+        width: 100vw;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* &--animated {
+        transform: translateY(0);
+    } */
+
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        width: 100vw;
+        height: 44px;
+        padding: 0 50px;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $color-battleship-grey;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    &__advantage-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__advantage-item {
+        font-size: 16px;
+        line-height: 16px;
+        color: $color-white;
+        pointer-events: none;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        font-size: 16px;
+        line-height: 16px;
+        gap: 6px;
+        transition: color $transition-300;
+
+        &--contrast {
+            color: $color-black;
+        }
+
+        &:hover, 
+        &:focus-visible {
+            color: $color-dark-carnation;
+
+            #{$root}__icon {
+                transform: scale(1.25);
+            }
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        transition: transform $transition-300;
+    }
+
+    &__main {
+        display: flex;
+        width: 100%;
+        height: 140px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 44px 0 0 0;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 1px;
+            background-color: $color-black-20;
+            width: 100vw;
+            bottom: 0;
+            right: -50px;
+        }
+    }
+
+    &__main-wrapper {
+        display: flex;
+    }
+
+    &__main-link {  
+        color: $color-dark-carnation;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform $transition-300;
+
+        &:hover {
+            transform: scaleY(1.2);
+        }
+    }
+
+    &__catalogue-wrapper {
+        position: relative;
+
+        &:hover #{$root}__catalogue-list {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+        }
+    }
+    
+    &__catalogue-list {
+        position: absolute;
+        top: 0;
+        left: calc(100% + 10px);
+        list-style: none;
+        padding: 10px 30px;
+        margin: 0;
+        width: 200px;
+        border: 2px solid $color-dark-carnation;
+        border-radius: 20px;
+        background-color: $color-white;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: 0;
+        transition: opacity $transition-300,transform $transition-300;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            content: "";
+            width: 10px;
+            height: 100%;
+        }
+    }
+
+    &__catalogue-link {
+        line-height: 20px;
+        font-size: 16px;
+        color: $color-black;
+        transition: color $transition-300;
+
+        &:hover, 
+        &:focus-visible {
+            color: $color-dark-carnation
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__bottom {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 20px;
+    }
+}

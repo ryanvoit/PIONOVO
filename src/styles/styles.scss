@@ -1,0 +1,22 @@
+/* Global */
+/* ------------------------------------ */
+
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/mixins.scss";
+@import "./global/normalize.scss";
+@import "./global/visually-hidden.scss"; 
+@import "./global/container.scss";
+@import "./global/reboot.scss"; 
+
+/* Components */
+/* ------------------------------------ */
+
+@import "./components/header.scss";  
+@import "./components/footer.scss";
+@import "./components/main-page.scss";
+@import "./components/btn.scss";
+@import "./components/main-nav.scss";
+@import "./components/main-page.scss";
+
+

@@ -1,0 +1,53 @@
+.btn {
+    background-color: transparent;
+    color: $color-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+    border-radius: 10px;
+    border: 1px solid $color-black;
+    cursor: pointer;
+    transition: color $transition-300, border-color $transition-300;
+    position: relative;
+    $root: &;
+
+    &:hover, 
+    &:focus-visible {
+        color: $color-dark-carnation;
+        border-color:$color-dark-carnation;
+
+        #{$root}__icon-wrapper {
+            color: $color-dark-carnation;
+            border-color: $color-dark-carnation;
+        }
+
+    }
+
+    &__icon-wrapper {
+        position: absolute;
+        color: $color-black;
+        background-color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        width: 28px;
+        height: 28px;
+        transition: color $transition-300, border-color $transition-300;
+        border: 1px solid $color-black;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+    }
+
+    &--secondary {
+        gap: 10px;
+        height: 40px;
+        border: 2px solid $color-dark-carnation;
+    }
+}
