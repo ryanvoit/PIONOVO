@@ -1,7 +1,6 @@
 import "@/styles/styles.scss"
 import FooterComponent from "@/components/Footer/FooterComponent";
 import HeaderComponent from "@/components/Header/HeaderComponent";
-import { Providers } from "./providers";
 
 export default function RootLayout({
   children,
@@ -11,15 +10,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>
-            <header className="header">
-              <HeaderComponent />
-            </header>
-            <main>{children}</main>
-            <footer className="footer">
-              <FooterComponent />
-            </footer>
-          </Providers>
+        <header className="header">
+          <HeaderComponent />
+        </header>
+        <main>{children}</main>
+        <footer className="footer">
+          <FooterComponent />
+        </footer>
       </body>
     </html>
   );

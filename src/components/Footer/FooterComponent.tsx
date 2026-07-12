@@ -1,3 +1,5 @@
+import { Icon } from "../Common/Icon/Icon"
+
 export default function FooterComponent() {
     return (
         <div className="container">
@@ -8,44 +10,32 @@ export default function FooterComponent() {
                 <div className="footer__contacts">
                     <h2 className="footer__heading">Контакты</h2>
                     <a className="footer__link" href="#">
-                        <svg className="footer__icon" width="20" height="20" aria-hidden="true">
-                            <use href="images/sprite.svg#phone-icon"></use>
-                        </svg>
+                        <Icon role='phone' className="footer__icon"/>
                         <span>+7 (931) 281-09-22</span>
                     </a>
                     <a className="footer__link" href="#">
-                        <svg className="footer__icon" width="20" height="20" aria-hidden="true">
-                            <use href="images/sprite.svg#email-icon"></use>
-                        </svg>
+                        <Icon role='email' className="footer__icon"/>
                         <span>hello@pionovo.ru</span>
                     </a>
                     <ul className="header__social social social--footer">
                         <li className="social__item">
                             <a className="social__link" href="#">
-                                <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                    <use href="images/sprite.svg#inst-icon"></use>
-                                </svg>
+                                <Icon role='instagram' className="social__icon"/>
                             </a>
                         </li>
                         <li className="social__item">
                             <a className="social__link" href="#">
-                                <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                    <use href="images/sprite.svg#telegram-icon"></use>
-                                </svg>
+                                <Icon role='telegram' className="social__icon"/>
                             </a>
                         </li>
                         <li className="social__item">
                             <a className="social__link" href="#">
-                                <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                    <use href="images/sprite.svg#whats-up-icon"></use>
-                                </svg>
+                                <Icon role='whats-app' className="social__icon"/>
                             </a>
                         </li>
                         <li className="social__item">
                             <a className="social__link" href="#">
-                                <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                    <use href="images/sprite.svg#vk-icon"></use>
-                                </svg>
+                                <Icon role='vk' className="social__icon"/>
                             </a>
                         </li>
                     </ul>

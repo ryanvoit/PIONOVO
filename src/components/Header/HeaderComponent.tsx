@@ -1,52 +1,11 @@
+import HeaderInfo from "./HeaderInfo"
+import { Icon } from "../Common/Icon/Icon"
+
 export default function HeaderComponent() {
     return (
         <div className="container">
             <div className="header__wrapper">
-                <div className="header__info">
-                    <ul className="header__advantage-list">
-                        <li className="header__advantage-item">Свежие пионы</li>
-                        <li className="header__advantage-item">Подарки к букетам</li>
-                    </ul>
-                    <div className="header__info-wrapper">
-                        <a className="header__link" href="#">
-                            <svg className="header__icon" width="24" height="24" aria-hidden="true">
-                                <use href="images/sprite.svg#location-icon"></use>
-                            </svg>
-                            <span>Санкт-Петербург, Проспект Обуховской обороны, 73; Метро "Елизаровская"</span>
-                        </a>
-                        <ul className="header__social social">
-                            <li className="social__item">
-                                <a className="social__link" href="#">
-                                    <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                        <use href="images/sprite.svg#inst-icon"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li className="social__item">
-                                <a className="social__link" href="#">
-                                    <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                        <use href="images/sprite.svg#telegram-icon"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li className="social__item">
-                                <a className="social__link" href="#">
-                                    <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                        <use href="images/sprite.svg#whats-up-icon"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li className="social__item">
-                                <a className="social__link" href="#">
-                                    <svg className="social__icon" width="20" height="20" aria-hidden="true">
-                                        <use href="images/sprite.svg#vk-icon"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
+                <HeaderInfo />
                 <div className="header__main">
                     <div className="header__main-wrapper">
                         <a className="header__main-link" href="#">
@@ -55,9 +14,7 @@ export default function HeaderComponent() {
                         <div className="header__catalogue-wrapper">
                             <button className="header__btn-catalogue btn btn--secondary">
                                 <span>Каталог</span>
-                                <svg className="btn__icon" width="24" height="24" aria-hidden="true">
-                                    <use href="images/sprite.svg#burger-menu-icon"></use>
-                                </svg>
+                                <Icon role='burger' className="btn__icon"/>           
                             </button>
                             <ul className="header__catalogue-list">
                                 <li className="header__catalogue-item">
@@ -85,17 +42,13 @@ export default function HeaderComponent() {
                         <button className="header__btn btn">
                             <span>Корзина</span>
                             <div className="btn__icon-wrapper">
-                                <svg className="btn__icon" width="24" height="24" aria-hidden="true">
-                                    <use href="images/sprite.svg#cart-icon"></use>
-                                </svg>
+                                <Icon role='cart' className="btn__icon"/> 
                             </div>
                         </button>
                         <button className="header__btn btn">
                             <span>Войти</span>
                             <div className="btn__icon-wrapper">
-                                <svg className="btn__icon" width="24" height="24" aria-hidden="true">
-                                    <use href="images/sprite.svg#user-icon"></use>
-                                </svg>
+                                <Icon role='user' className="btn__icon"/> 
                             </div>
                         </button>
                     </div>
@@ -116,15 +69,11 @@ export default function HeaderComponent() {
                     </nav>
                     <div className="header__contacts">
                         <a className="header__link header__link--contrast" href="tel:+79312810922">
-                            <svg className="header__icon" width="20" height="20" aria-hidden="true">
-                                <use href="images/sprite.svg#phone-icon"></use>
-                            </svg>
+                            <Icon role='phone' className="header__icon"/> 
                             <span>+7 (931) 281-09-22</span>
                         </a>
                         <a className="header__link header__link--contrast" href="mailto:hello@pionovo.ru">
-                            <svg className="header__icon" width="20" height="20" aria-hidden="true">
-                                <use href="images/sprite.svg#email-icon"></use>
-                            </svg>
+                            <Icon role='email' className="header__icon"/> 
                             <span>hello@pionovo.ru</span>
                         </a>
                     </div>

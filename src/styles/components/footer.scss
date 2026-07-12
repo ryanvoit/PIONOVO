@@ -24,12 +24,13 @@
         font-size: 40px;
         margin: 0;
         line-height: 48px;
+        pointer-events: none;
     }
 
     &__contacts {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 12px;
     }
 
     &__heading {
@@ -71,6 +72,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        pointer-events: none;
     }
 
     &__advantages-text {
