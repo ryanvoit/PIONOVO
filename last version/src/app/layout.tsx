@@ -1,6 +1,6 @@
 import "@/styles/styles.scss"
-import FooterComponent from "@/components/Footer/FooterComponent";
-import HeaderComponent from "@/components/Header/HeaderComponent";
+import FooterComponent from "../components/Footer/FooterComponent";
+import HeaderComponent from "../components/Header/HeaderComponent";
 
 export default function RootLayout({
   children,
