@@ -1,11 +1,11 @@
 @use "../functions/rem" as *;
 
 // Typography
-$ff-main: "Oswald", "Arial", sans-serif;
 
 //font-family
-$ff-inter: "Inter", system-ui, sans-serif;
-$ff-base: $ff-inter;
+$ff-oswald: "Oswald", "Arial", sans-serif;
+
+$ff-base: $ff-oswald;
 
 //font-size
 $fs-3xs: 10px;
