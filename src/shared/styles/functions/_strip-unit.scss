@@ -1,0 +1,12 @@
+@use "sass:math";
+@use "sass:meta";
+
+// функция для очистки буквенных значений, чтобы удобнее было переводить в rem
+// используется только в функциях и не выносится наружу
+@function strip-unit($value) {
+  @if meta.type-of($value) == "number" and not math.is-unitless($value) {
+    @return math.div($value, $value * 0 + 1);
+  }
+
+  @return $value;
+}

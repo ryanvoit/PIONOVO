@@ -1,0 +1,110 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.footer {
+  background-color: #535652;
+  padding: 0;
+  width: 100%;
+  height: 300px;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr;
+  height: 100%;
+  padding: 40px 0 0 0;
+  gap: 20px;
+}
+.footer__description {
+  display: flex;
+  flex-direction: column;
+}
+.footer__text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+  line-height: 48px;
+  pointer-events: none;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__heading {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0 0 10px;
+}
+.footer__link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  line-height: 30px;
+  gap: 6px;
+  transition: color ease-in 0.3s;
+}
+.footer__link:hover, .footer__link:focus-visible {
+  color: #ff5773;
+}
+.footer__link:hover .footer__icon, .footer__link:focus-visible .footer__icon {
+  transform: scale(1.25);
+}
+.footer__icon {
+  flex-shrink: 0;
+  transition: transform ease-in 0.3s;
+}
+.footer__advantages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  pointer-events: none;
+}
+.footer__advantages-text {
+  color: #ffffff;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  transition: color ease-in 0.3s;
+  position: relative;
+}
+.social__link:hover, .social__link:focus-visible {
+  color: #ff5773;
+}
+.social__link:hover .social__icon, .social__link:focus-visible .social__icon {
+  transform: scale(1.1);
+}
+.social__link::before {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  content: "";
+}
+.social__icon {
+  flex-shrink: 0;
+  transition: transform ease-in 0.3s;
+}

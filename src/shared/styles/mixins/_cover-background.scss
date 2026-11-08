@@ -1,0 +1,23 @@
+@use "sass:list";
+
+// Бэкграунд на всю ширину экрана.
+@mixin cover-background(
+  $images,
+  $bg-color: null,
+  $background-top: center,
+  $background-left: center,
+  $background-attachment: fixed
+) {
+  $url-list: ();
+
+  @each $img in $images {
+    $url-list: list.append($url-list, url(#{$img}), comma);
+  }
+
+  background-color: $bg-color;
+  background-image: $url-list;
+  background-repeat: no-repeat;
+  background-position: #{$background-left} #{$background-top};
+  background-attachment: #{$background-attachment};
+  background-size: cover;
+}
