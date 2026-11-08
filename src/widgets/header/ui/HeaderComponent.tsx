@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { Icon } from "../../../shared/ui/icon"
+import { BurgerIcon, CartIcon, EmailIcon, PhoneIcon, UserIcon } from "../../../shared/assets/icons"
 import { Container } from "../../../shared/ui/container"
 import buttonStyles from "../../../shared/ui/button/Button.module.css"
 import { HeaderInfo } from "./HeaderInfo"
@@ -20,7 +20,7 @@ export default function HeaderComponent() {
                             <div className={styles["header__catalogue-wrapper"]}>
                                 <button className={clsx(styles["header__btn-catalogue"], buttonStyles.btn, buttonStyles["btn--secondary"])}>
                                     <span>Каталог</span>
-                                    <Icon role='burger' className={buttonStyles.btn__icon}/>
+                                    <BurgerIcon className={buttonStyles.btn__icon}/>
                                 </button>
                                 <ul className={styles["header__catalogue-list"]}>
                                     <li className={styles["header__catalogue-item"]}>
@@ -48,13 +48,13 @@ export default function HeaderComponent() {
                             <button className={clsx(styles.header__btn, buttonStyles.btn)}>
                                 <span>Корзина</span>
                                 <div className={buttonStyles["btn__icon-wrapper"]}>
-                                    <Icon role='cart' className={buttonStyles.btn__icon}/>
+                                    <CartIcon className={buttonStyles.btn__icon}/>
                                 </div>
                             </button>
                             <button className={clsx(styles.header__btn, buttonStyles.btn)}>
                                 <span>Войти</span>
                                 <div className={buttonStyles["btn__icon-wrapper"]}>
-                                    <Icon role='user' className={buttonStyles.btn__icon}/>
+                                    <UserIcon className={buttonStyles.btn__icon}/>
                                 </div>
                             </button>
                         </div>
@@ -63,11 +63,11 @@ export default function HeaderComponent() {
                         <HeaderNav />
                         <div className={styles.header__contacts}>
                             <a className={clsx(styles.header__link, styles["header__link--contrast"])} href="tel:+79312810922">
-                                <Icon role='phone' className={styles.header__icon}/>
+                                <PhoneIcon className={styles.header__icon}/>
                                 <span>+7 (931) 281-09-22</span>
                             </a>
                             <a className={clsx(styles.header__link, styles["header__link--contrast"])} href="mailto:hello@pionovo.ru">
-                                <Icon role='email' className={styles.header__icon}/>
+                                <EmailIcon className={styles.header__icon}/>
                                 <span>hello@pionovo.ru</span>
                             </a>
                         </div>

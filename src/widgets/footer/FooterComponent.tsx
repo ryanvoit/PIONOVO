@@ -1,4 +1,4 @@
-import { Icon } from "../../shared/ui/icon"
+import { EmailIcon, PhoneIcon } from "../../shared/assets/icons"
 import { Container } from "../../shared/ui/container"
 import { SocialLinks } from "../../shared/ui/social-links"
 import styles from "./FooterComponent.module.css"
@@ -14,11 +14,11 @@ export default function FooterComponent() {
                     <div className={styles.footer__contacts}>
                         <h2 className={styles.footer__heading}>Контакты</h2>
                         <a className={styles.footer__link} href="#">
-                            <Icon role='phone' className={styles.footer__icon}/>
+                            <PhoneIcon className={styles.footer__icon}/>
                             <span>+7 (931) 281-09-22</span>
                         </a>
                         <a className={styles.footer__link} href="#">
-                            <Icon role='email' className={styles.footer__icon}/>
+                            <EmailIcon className={styles.footer__icon}/>
                             <span>hello@pionovo.ru</span>
                         </a>
                         <SocialLinks />

@@ -1,4 +1,4 @@
-import { Icon } from "../../../../shared/ui/icon"
+import { LocationIcon } from "../../../../shared/assets/icons"
 import { SocialLinks } from "../../../../shared/ui/social-links"
 import styles from "./HeaderInfo.module.css"
 import headerStyles from "../HeaderComponent.module.css"
@@ -12,7 +12,7 @@ export function HeaderInfo() {
             </ul>
             <div className={styles["header__info-wrapper"]}>
                 <a className={headerStyles.header__link} href="#">
-                    <Icon className={headerStyles.header__icon} role='location' />
+                    <LocationIcon className={headerStyles.header__icon} />
                     <span>Санкт-Петербург, Проспект Обуховской обороны, 73; Метро &laquo;Елизаровская&raquo;</span>
                 </a>
                 <SocialLinks />
