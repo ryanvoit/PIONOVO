@@ -1,0 +1,13 @@
+@use "@styles" as *;
+
+.wrapper {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+} 
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

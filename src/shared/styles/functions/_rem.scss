@@ -1,0 +1,28 @@
+@use "sass:math";
+@use "sass:meta";
+@use "sass:list";
+@use "./strip-unit" as *;
+
+// функция для перевода только px в rem
+@function rem($values...) {
+  $result: ();
+
+  @each $value in $values {
+    @if meta.type-of($value) != "number" {
+      @error "Функция rem() принимает только числа. Получено: #{$value}.";
+    }
+
+    @if $value == 0 or $value == 0px {
+      $result: list.append($result, 0);
+    } @else if math.is-unitless($value) {
+      @error "Значение #{$value} должно быть указано с единицей px, если оно больше 0.";
+    } @else {
+      $result: list.append(
+        $result,
+        math.div(strip-unit($value), strip-unit(16px)) * 1rem
+      );
+    }
+  }
+
+  @return $result;
+}
