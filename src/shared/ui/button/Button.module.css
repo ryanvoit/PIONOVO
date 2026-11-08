@@ -19,29 +19,6 @@
   color: #ff5773;
   border-color: #ff5773;
 }
-.btn:hover .btn__icon-wrapper, .btn:focus-visible .btn__icon-wrapper {
-  color: #ff5773;
-  border-color: #ff5773;
-}
-.btn__icon-wrapper {
-  position: absolute;
-  color: #000000;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  top: 0;
-  right: 0;
-  transform: translate(50%, -50%);
-  width: 28px;
-  height: 28px;
-  transition: color ease-in 0.3s, border-color ease-in 0.3s;
-  border: 1px solid #000000;
-}
-.btn__icon {
-  flex-shrink: 0;
-}
 .btn--secondary {
   gap: 10px;
   height: 40px;

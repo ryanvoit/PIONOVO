@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import { BurgerIcon, CartIcon, EmailIcon, PhoneIcon, UserIcon } from "../../../shared/assets/icons"
 import { Container } from "../../../shared/ui/container"
-import buttonStyles from "../../../shared/ui/button/Button.module.css"
+import { Button } from "../../../shared/ui/button"
 import { HeaderInfo } from "./HeaderInfo"
 import { HeaderNav } from "./HeaderNav"
 import styles from "./HeaderComponent.module.css"
@@ -18,10 +18,13 @@ export default function HeaderComponent() {
                                 <span>P.I.O.N.O.V.O.</span>
                             </a>
                             <div className={styles["header__catalogue-wrapper"]}>
-                                <button className={clsx(styles["header__btn-catalogue"], buttonStyles.btn, buttonStyles["btn--secondary"])}>
+                                <Button
+                                    variant="secondary"
+                                    className={styles["header__btn-catalogue"]}
+                                >
                                     <span>Каталог</span>
-                                    <BurgerIcon className={buttonStyles.btn__icon}/>
-                                </button>
+                                    <BurgerIcon />
+                                </Button>
                                 <ul className={styles["header__catalogue-list"]}>
                                     <li className={styles["header__catalogue-item"]}>
                                         <a href="#" className={styles["header__catalogue-link"]}>8 Марта</a>
@@ -45,18 +48,18 @@ export default function HeaderComponent() {
                             </div>
                         </div>
                         <div className={styles.header__buttons}>
-                            <button className={clsx(styles.header__btn, buttonStyles.btn)}>
+                            <Button className={styles.header__btn}>
                                 <span>Корзина</span>
-                                <div className={buttonStyles["btn__icon-wrapper"]}>
-                                    <CartIcon className={buttonStyles.btn__icon}/>
-                                </div>
-                            </button>
-                            <button className={clsx(styles.header__btn, buttonStyles.btn)}>
+                                <span className={styles["header__btn-badge"]}>
+                                    <CartIcon />
+                                </span>
+                            </Button>
+                            <Button className={styles.header__btn}>
                                 <span>Войти</span>
-                                <div className={buttonStyles["btn__icon-wrapper"]}>
-                                    <UserIcon className={buttonStyles.btn__icon}/>
-                                </div>
-                            </button>
+                                <span className={styles["header__btn-badge"]}>
+                                    <UserIcon />
+                                </span>
+                            </Button>
                         </div>
                     </div>
                     <div className={styles.header__bottom}>

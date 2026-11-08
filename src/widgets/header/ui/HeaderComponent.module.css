@@ -149,3 +149,25 @@
   display: flex;
   gap: 20px;
 }
+.header__btn svg, .header__btn-catalogue svg {
+  flex-shrink: 0;
+}
+.header__btn-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translate(50%, -50%);
+  transition: color ease-in 0.3s, border-color ease-in 0.3s;
+}
+.header__btn:hover .header__btn-badge, .header__btn:focus-visible .header__btn-badge {
+  color: #ff5773;
+  border-color: #ff5773;
+}

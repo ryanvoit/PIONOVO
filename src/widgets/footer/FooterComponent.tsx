@@ -37,7 +37,6 @@ export default function FooterComponent() {
                             <p className={styles["footer__advantages-text"]}>Что-то ещё</p>
                         </li>
                     </ul>
-
                 </div>
             </Container>
         </div>

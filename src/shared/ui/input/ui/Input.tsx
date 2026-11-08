@@ -1,11 +1,8 @@
-'use client'
-
 import { forwardRef, useState, useEffect } from "react"
 import type { ChangeEventHandler } from "react"
-import { Icon } from "../icon/Icon"
-import { fetchMoviesbySearch } from "@/api/movies/fetches"
-import { MovieList } from "@/api/movies/types"
-import { SearchDataComponent } from "@/components/Header/SearchDataComponent/SearchDataComponent"
+// import { fetchMoviesbySearch } from "@/api/movies/fetches"
+// import { MovieList } from "@/api/movies/types"
+// import { SearchDataComponent } from "@/components/Header/SearchDataComponent/SearchDataComponent"
 import type { CustomInputProps } from "./Input.props"
 
 export const CustomInput = forwardRef<HTMLInputElement, CustomInputProps>(
