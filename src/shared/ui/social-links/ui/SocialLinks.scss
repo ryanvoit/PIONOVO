@@ -1,0 +1,49 @@
+@use "@styles" as *;
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    $root: &;
+
+    &__item {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        color: $color-white;
+        transition: color $transition-300;
+        position: relative;
+
+        &:hover,
+        &:focus-visible {
+            color: $color-dark-carnation;
+
+            #{$root}__icon {
+                transform: scale(1.1);
+            }
+        }
+
+        &::before {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            content: '';
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        transition: transform $transition-300;
+    }
+}

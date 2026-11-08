@@ -1,22 +1,12 @@
 'use client'
 
-import { forwardRef, useState, useEffect, ChangeEventHandler } from "react"
+import { forwardRef, useState, useEffect } from "react"
+import type { ChangeEventHandler } from "react"
 import { Icon } from "../icon/Icon"
 import { fetchMoviesbySearch } from "@/api/movies/fetches"
 import { MovieList } from "@/api/movies/types"
 import { SearchDataComponent } from "@/components/Header/SearchDataComponent/SearchDataComponent"
-
-export interface CustomInputProps {
-    btnType: 'email' | 'password' | 'text',
-    role: 'email' | 'password' | 'user' | 'search',
-    placeholder: string,
-    id: string,
-    setter?: (value: string) => void,
-    name?: string,
-    onBlur?: ChangeEventHandler<HTMLInputElement>,
-    onChange?: ChangeEventHandler<HTMLInputElement>,
-    errorMessage?: string
-}
+import type { CustomInputProps } from "./Input.props"
 
 export const CustomInput = forwardRef<HTMLInputElement, CustomInputProps>(
     ({ btnType, role, placeholder, id, setter, name, onBlur, onChange, errorMessage }, ref) => {

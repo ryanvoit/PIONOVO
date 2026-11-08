@@ -1,6 +1,6 @@
-import { Icon } from "../../shared/ui/icon/Icon"
-import Container from "../../shared/ui/container/Container"
-import { cx } from "../../shared/lib/cx"
+import { Icon } from "../../shared/ui/icon"
+import { Container } from "../../shared/ui/container"
+import { SocialLinks } from "../../shared/ui/social-links"
 import styles from "./FooterComponent.module.css"
 
 export default function FooterComponent() {
@@ -21,28 +21,7 @@ export default function FooterComponent() {
                             <Icon role='email' className={styles.footer__icon}/>
                             <span>hello@pionovo.ru</span>
                         </a>
-                        <ul className={cx(styles.header__social, styles.social, styles["social--footer"])}>
-                            <li className={styles.social__item}>
-                                <a className={styles.social__link} href="#">
-                                    <Icon role='instagram' className={styles.social__icon}/>
-                                </a>
-                            </li>
-                            <li className={styles.social__item}>
-                                <a className={styles.social__link} href="#">
-                                    <Icon role='telegram' className={styles.social__icon}/>
-                                </a>
-                            </li>
-                            <li className={styles.social__item}>
-                                <a className={styles.social__link} href="#">
-                                    <Icon role='whats-app' className={styles.social__icon}/>
-                                </a>
-                            </li>
-                            <li className={styles.social__item}>
-                                <a className={styles.social__link} href="#">
-                                    <Icon role='vk' className={styles.social__icon}/>
-                                </a>
-                            </li>
-                        </ul>
+                        <SocialLinks />
                     </div>
                     <ul className={styles["footer__advantages-list"]}>
                         <li className={styles["footer__advantages-item"]}>

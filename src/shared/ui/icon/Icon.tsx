@@ -1,10 +1,5 @@
 import type { FC } from "react"
-
-export interface IconProps {
-    role: 'location' | 'instagram' | 'telegram' | 'whats-app' | 'vk' | 'burger' | 'cart' | 'user' |
-    'phone' | 'email'
-    className: string
-}
+import type { IconProps } from "./Icon.props"
 
 export const Icon: FC<IconProps> = ({ role, className }) => {
     switch (role) {

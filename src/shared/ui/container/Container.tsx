@@ -1,15 +1,10 @@
-import type { ReactNode } from "react"
-import { cx } from "../../lib/cx"
+import clsx from "clsx"
 import styles from "./Container.module.css"
-
-export interface ContainerProps {
-    children: ReactNode
-    className?: string
-}
+import type { ContainerProps } from "./Container.props"
 
 export default function Container({ children, className }: ContainerProps) {
     return (
-        <div className={cx(styles.container, className)}>
+        <div className={clsx(styles.container, className)}>
             {children}
         </div>
     )

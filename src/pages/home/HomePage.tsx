@@ -1,6 +1,6 @@
-import Container from "../../shared/ui/container/Container";
+import { Container } from "../../shared/ui/container";
 import FooterComponent from "../../widgets/footer/FooterComponent";
-import HeaderComponent from "../../widgets/header/HeaderComponent";
+import HeaderComponent from "../../widgets/header/ui/HeaderComponent";
 import styles from "./HomePage.module.css";
 
 export default function HomePage() {
