@@ -1,4 +1,4 @@
-import { FC } from "react"
+import type { FC } from "react"
 
 export interface IconProps {
     role: 'location' | 'instagram' | 'telegram' | 'whats-app' | 'vk' | 'burger' | 'cart' | 'user' |

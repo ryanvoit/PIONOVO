@@ -1,4 +1,4 @@
-import { Icon } from "../Common/Icon/Icon"
+import { Icon } from "../../shared/Common/Icon/Icon"
 
 export default function FooterComponent() {
     return (
