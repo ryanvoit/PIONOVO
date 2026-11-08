@@ -1,4 +1,5 @@
 import { Icon } from "../../shared/ui/icon/Icon"
+import Container from "../../shared/ui/container/Container"
 import buttonStyles from "../../shared/ui/button/Button.module.css"
 import { cx } from "../../shared/lib/cx"
 import styles from "./HeaderComponent.module.css"
@@ -6,7 +7,7 @@ import styles from "./HeaderComponent.module.css"
 export default function HeaderComponent() {
     return (
         <div className={styles.header}>
-            <div className="container">
+            <Container>
                 <div className={styles.header__wrapper}>
                     <HeaderInfo />
                     <div className={styles.header__main}>
@@ -82,7 +83,7 @@ export default function HeaderComponent() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </div>
     )
 }

@@ -1,3 +1,4 @@
+import Container from "../../shared/ui/container/Container";
 import FooterComponent from "../../widgets/footer/FooterComponent";
 import HeaderComponent from "../../widgets/header/HeaderComponent";
 import styles from "./HomePage.module.css";
@@ -7,11 +8,11 @@ export default function HomePage() {
     <div className={styles.wrapper}>
       <HeaderComponent />
       <main>
-        <div className="container">
+        <Container>
           <div className={styles["main-page"]}>
             Home Page
           </div>
-        </div>
+        </Container>
       </main>
       <FooterComponent />
     </div>

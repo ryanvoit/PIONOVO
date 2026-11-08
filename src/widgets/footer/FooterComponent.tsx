@@ -1,11 +1,12 @@
 import { Icon } from "../../shared/ui/icon/Icon"
+import Container from "../../shared/ui/container/Container"
 import { cx } from "../../shared/lib/cx"
 import styles from "./FooterComponent.module.css"
 
 export default function FooterComponent() {
     return (
         <div className={styles.footer}>
-            <div className="container">
+            <Container>
                 <div className={styles.footer__wrapper}>
                     <div className={styles.footer__description}>
                         <p className={styles.footer__text}>Мы - P.I.O.N.O.V.O.</p>
@@ -59,7 +60,7 @@ export default function FooterComponent() {
                     </ul>
 
                 </div>
-            </div>
+            </Container>
         </div>
     )
 }

@@ -360,24 +360,3 @@ a {
 textarea {
   resize: none;
 }
-
-:global(.container) {
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 0 50px;
-  height: 100%;
-  flex-grow: 1;
-}
-
-:global(.visually-hidden) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: none;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-}
