@@ -1,0 +1,35 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.main-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 42px;
+  padding: 20px;
+}
+.main-nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  transition: color ease-in 0.3s;
+  position: relative;
+}
+.main-nav__link:hover, .main-nav__link:focus-visible {
+  color: #ff5773;
+}
+.main-nav__link::before {
+  width: calc(100% + 36px);
+  height: calc(100% + 12px);
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: -4px;
+}

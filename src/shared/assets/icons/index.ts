@@ -1,0 +1,10 @@
+export { default as BurgerIcon } from "./burger.svg?react";
+export { default as CartIcon } from "./cart.svg?react";
+export { default as EmailIcon } from "./email.svg?react";
+export { default as InstagramIcon } from "./instagram.svg?react";
+export { default as LocationIcon } from "./location.svg?react";
+export { default as PhoneIcon } from "./phone.svg?react";
+export { default as TelegramIcon } from "./telegram.svg?react";
+export { default as UserIcon } from "./user.svg?react";
+export { default as VkIcon } from "./vk.svg?react";
+export { default as WhatsAppIcon } from "./whats-app.svg?react";
