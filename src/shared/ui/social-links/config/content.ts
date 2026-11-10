@@ -1,4 +1,4 @@
-import { InstagramIcon, TelegramIcon, VkIcon, WhatsAppIcon } from "../../../assets/icons"
+import { InstagramIcon, TelegramIcon, VkIcon, WhatsAppIcon } from "@/shared/assets/icons"
 
 export type SocialRole = "instagram" | "telegram" | "whats-app" | "vk"
 

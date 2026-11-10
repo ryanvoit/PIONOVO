@@ -1,15 +1,15 @@
 @use "@styles" as *;
 
 .header {
-    &__info {
+    &__top {
         width: 100vw;
         height: 44px;
-        padding: 0 50px;
+        padding: 0 120px;
         display: flex;
         position: absolute;
         top: 0;
         right: 0;
-        background-color: $color-battleship-grey;
+        background-color: $color-dark-grey;
         justify-content: space-between;
         z-index: 1;
     }
@@ -31,8 +31,9 @@
         pointer-events: none;
     }
 
-    &__info-wrapper {
+    &__top-wrapper {
         display: flex;
         gap: 30px;
+        align-items: center;
     }
 }

@@ -1,6 +1,6 @@
-import { EmailIcon, PhoneIcon } from "../../shared/assets/icons"
-import { Container } from "../../shared/ui/container"
-import { SocialLinks } from "../../shared/ui/social-links"
+import { EmailIcon, PhoneIcon } from "@/shared/assets/icons"
+import { Container } from "@/shared/ui/container"
+import { SocialLinks } from "@/shared/ui/social-links"
 import styles from "./FooterComponent.module.css"
 
 export default function FooterComponent() {

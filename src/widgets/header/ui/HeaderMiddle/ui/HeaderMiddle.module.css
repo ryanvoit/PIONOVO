@@ -1,0 +1,109 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.header__main {
+  display: flex;
+  width: 100%;
+  height: 140px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 0 0 0;
+}
+.header__main::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  bottom: 60px;
+  right: 0px;
+}
+.header__main-wrapper {
+  display: flex;
+}
+.header__main-link {
+  color: #ff5773;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform ease-in 0.3s;
+}
+.header__main-link:hover {
+  transform: scaleY(1.2);
+}
+.header__catalogue-wrapper {
+  position: relative;
+}
+.header__catalogue-wrapper:hover .header__catalogue-list {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.header__catalogue-list {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  list-style: none;
+  padding: 10px 30px;
+  margin: 0;
+  width: 200px;
+  border: 2px solid #ff5773;
+  border-radius: 20px;
+  background-color: #ffffff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: 0;
+  transition: opacity ease-in 0.3s, transform ease-in 0.3s;
+}
+.header__catalogue-list::before {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  content: "";
+  width: 10px;
+  height: 100%;
+}
+.header__catalogue-link {
+  line-height: 20px;
+  font-size: 16px;
+  color: #000000;
+  transition: color ease-in 0.3s;
+}
+.header__catalogue-link:hover, .header__catalogue-link:focus-visible {
+  color: #ff5773;
+}
+.header__buttons {
+  display: flex;
+  gap: 20px;
+}
+.header__btn svg, .header__btn-catalogue svg {
+  flex-shrink: 0;
+}
+.header__btn-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translate(50%, -50%);
+  transition: color ease-in 0.3s, border-color ease-in 0.3s;
+}
+.header__btn:hover .header__btn-badge, .header__btn:focus-visible .header__btn-badge {
+  color: #ff5773;
+  border-color: #ff5773;
+}

@@ -1,0 +1,16 @@
+@use "@styles" as *;
+
+.header {
+    &__bottom {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 20px;
+    }
+}

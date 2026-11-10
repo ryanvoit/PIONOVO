@@ -2,15 +2,15 @@
 /* semantic / success */
 /* neutral */
 /*  gradients-brand */
-.header__info {
+.header__top {
   width: 100vw;
   height: 44px;
-  padding: 0 50px;
+  padding: 0 120px;
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #535652;
+  background-color: rgb(43, 31, 34);
   justify-content: space-between;
   z-index: 1;
 }
@@ -29,7 +29,8 @@
   color: #ffffff;
   pointer-events: none;
 }
-.header__info-wrapper {
+.header__top-wrapper {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
