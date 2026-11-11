@@ -1,0 +1,9 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.header__top-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}

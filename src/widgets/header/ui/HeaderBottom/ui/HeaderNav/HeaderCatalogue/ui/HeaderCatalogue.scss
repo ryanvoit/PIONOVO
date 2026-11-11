@@ -1,0 +1,63 @@
+@use "@styles" as *;
+
+.header {
+    $root: &;
+
+    &__catalogue-wrapper {
+        position: relative;
+
+        &:hover #{$root}__catalogue-list {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+    }
+
+    &__catalogue-list {
+        position: absolute;
+        top: 0;
+        left: calc(100% + 10px);
+        list-style: none;
+        padding: 10px 30px;
+        margin: 0;
+        width: 200px;
+        border: 2px solid $color-dark-carnation;
+        border-radius: 20px;
+        background-color: $color-white;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: 0;
+        transition: opacity $transition-300, transform $transition-300;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            content: "";
+            width: 10px;
+            height: 100%;
+        }
+    }
+
+    &__catalogue-link {
+        line-height: 20px;
+        font-size: 16px;
+        color: $color-black;
+        transition: color $transition-300;
+
+        &:hover,
+        &:focus-visible {
+            color: $color-dark-carnation;
+        }
+    }
+
+    &__btn-catalogue {
+        svg {
+            flex-shrink: 0;
+        }
+    }
+}

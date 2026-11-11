@@ -1,0 +1,19 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.header__advantage-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header__advantage-item {
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  pointer-events: none;
+}

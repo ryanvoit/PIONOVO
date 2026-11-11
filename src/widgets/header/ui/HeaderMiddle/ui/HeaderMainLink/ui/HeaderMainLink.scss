@@ -1,0 +1,36 @@
+@use "@styles" as *;
+
+.header {
+    &__main-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+        color: $color-royal-health;
+
+        &:hover {
+            .header__main-link-text {
+                color: $color-royal-health;
+            }
+
+            .header__main-link-icon {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__main-link-icon {
+        transition: transform $transition-300;
+    }
+
+    &__main-link-text {
+        font-family: $ff-accent;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.08em;
+        color: $color-dark-grey;
+        transition: color $transition-300;
+    }
+}

@@ -1,0 +1,9 @@
+@use "@styles" as *;
+
+.header {
+    &__top-wrapper {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+}

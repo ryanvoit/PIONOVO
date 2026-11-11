@@ -1,1 +1,1 @@
-export { PATHS, type PathsKey, type PathsValue } from "../paths";
+export { PATHS, type PathsKey, type PathsValue } from "./paths";

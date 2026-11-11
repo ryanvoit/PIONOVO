@@ -8,3 +8,4 @@ export { default as TelegramIcon } from "./telegram.svg?react";
 export { default as UserIcon } from "./user.svg?react";
 export { default as VkIcon } from "./vk.svg?react";
 export { default as WhatsAppIcon } from "./whats-app.svg?react";
+export { default as Pionovo } from "./pionovo.svg?react";

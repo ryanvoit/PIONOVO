@@ -1,5 +1,6 @@
 import styles from "./HeaderNav.module.css"
 import { NAV_LINKS } from "../config/links"
+import { HeaderCatalogue } from "../HeaderCatalogue"
 
 export function HeaderNav() {
     return (
@@ -11,6 +12,7 @@ export function HeaderNav() {
                     </li>
                 ))}
             </ul>
+            <HeaderCatalogue />
         </nav>
     )
 }

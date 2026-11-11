@@ -1,0 +1,30 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.header__main-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  color: #C2456B;
+}
+.header__main-link:hover .header__main-link-text {
+  color: #C2456B;
+}
+.header__main-link:hover .header__main-link-icon {
+  transform: scale(1.1);
+}
+.header__main-link-icon {
+  transition: transform ease-in 0.3s;
+}
+.header__main-link-text {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  color: #2B1F22;
+  transition: color ease-in 0.3s;
+}

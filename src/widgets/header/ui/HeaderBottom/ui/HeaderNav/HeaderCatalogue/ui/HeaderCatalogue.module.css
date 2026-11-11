@@ -1,0 +1,52 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.header__catalogue-wrapper {
+  position: relative;
+}
+.header__catalogue-wrapper:hover .header__catalogue-list {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.header__catalogue-list {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  list-style: none;
+  padding: 10px 30px;
+  margin: 0;
+  width: 200px;
+  border: 2px solid #ff5773;
+  border-radius: 20px;
+  background-color: #ffffff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: 0;
+  transition: opacity ease-in 0.3s, transform ease-in 0.3s;
+}
+.header__catalogue-list::before {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  content: "";
+  width: 10px;
+  height: 100%;
+}
+.header__catalogue-link {
+  line-height: 20px;
+  font-size: 16px;
+  color: #000000;
+  transition: color ease-in 0.3s;
+}
+.header__catalogue-link:hover, .header__catalogue-link:focus-visible {
+  color: #ff5773;
+}
+.header__btn-catalogue svg {
+  flex-shrink: 0;
+}

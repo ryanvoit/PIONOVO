@@ -1,0 +1,20 @@
+@use "@styles" as *;
+
+.header {
+    &__advantage-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__advantage-item {
+        font-size: 16px;
+        line-height: 16px;
+        color: $color-white;
+        pointer-events: none;
+    }
+}
