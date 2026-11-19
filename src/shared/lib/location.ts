@@ -1,4 +1,4 @@
-import type { Address } from "../config/content"
+import type { Address } from "../config/addresses"
 
 /** Ссылка на карту по адресу локации */
 export const getMapLink = ({ city, address }: Address) =>

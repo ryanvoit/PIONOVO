@@ -19,13 +19,14 @@
         align-items: center;
         width: 20px;
         height: 20px;
-        color: $color-white;
+        color: $color-black;
+        // color: $color-white;
         transition: color $transition-300;
         position: relative;
 
         &:hover,
         &:focus-visible {
-            color: $color-dark-carnation;
+            color: $color-royal-health;
 
             #{$root}__icon {
                 transform: scale(1.1);
@@ -45,5 +46,6 @@
     &__icon {
         flex-shrink: 0;
         transition: transform $transition-300;
+        transform: scale(1);
     }
 }

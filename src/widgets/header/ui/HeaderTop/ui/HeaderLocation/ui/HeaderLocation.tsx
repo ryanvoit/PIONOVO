@@ -1,18 +1,20 @@
 import clsx from "clsx"
 import { LocationIcon } from "@/shared/assets/icons"
-import { SocialLinks } from "@/shared/ui/social-links"
-import { LOCATIONS } from "../../../config/content"
-import { formatAddress, getMapLink } from "../../../lib"
+import { LOCATIONS } from "@/shared/config"
+import { formatAddress, getMapLink } from "@/shared/lib"
 import headerStyles from "@/widgets/header/ui/HeaderComponent.module.css"
-import styles from "./HeaderTopRight.module.css"
+import styles from "./HeaderLocation.module.css"
 
-export function HeaderTopRight() {
+export function HeaderLocation() {
     const mainAddress = formatAddress(LOCATIONS.main)
 
     return (
         <div className={styles["header__top-wrapper"]}>
             <a
-                className={headerStyles.header__link}
+                className={clsx(
+                    headerStyles.header__link,
+                    styles.header__link
+                )}
                 href={getMapLink(LOCATIONS.main)}
                 target="_blank"
                 rel="noreferrer"
@@ -26,7 +28,6 @@ export function HeaderTopRight() {
                 />
                 <span>{mainAddress}</span>
             </a>
-            <SocialLinks />
         </div>
     )
 }

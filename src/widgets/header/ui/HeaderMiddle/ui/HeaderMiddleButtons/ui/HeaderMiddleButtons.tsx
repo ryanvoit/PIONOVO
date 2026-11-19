@@ -1,4 +1,4 @@
-import { CartIcon, UserIcon } from "@/shared/assets/icons"
+import { CartIcon, HeartIcon } from "@/shared/assets/icons"
 import { Button } from "@/shared/ui/button"
 import styles from "./HeaderMiddleButtons.module.css"
 
@@ -12,9 +12,9 @@ export function HeaderMiddleButtons() {
                 </span>
             </Button>
             <Button className={styles.header__btn}>
-                <span>Войти</span>
+                <span>Избранное</span>
                 <span className={styles["header__btn-badge"]}>
-                    <UserIcon />
+                    <HeartIcon />
                 </span>
             </Button>
         </div>

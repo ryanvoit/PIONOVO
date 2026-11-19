@@ -31,7 +31,8 @@ body {
 
 main {
   flex-grow: 1;
-  padding: 200px 0 0;
+  // шапка теперь в потоке (HeaderTop + липкий блок), отдельный отступ под неё не нужен
+  padding: 20px 0 0;
 }
 
 img {

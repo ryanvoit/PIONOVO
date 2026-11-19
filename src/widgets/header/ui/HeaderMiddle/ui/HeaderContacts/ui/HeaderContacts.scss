@@ -1,0 +1,19 @@
+@use "@styles" as *;
+
+.header {
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contacts-text {
+        font-size: 12px;
+        line-height: 12px;
+        color: $color-battleship-grey;
+    }
+
+    &__phone-number {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

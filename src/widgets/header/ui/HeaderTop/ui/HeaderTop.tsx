@@ -1,12 +1,15 @@
+import { Container } from "@/shared/ui/container"
 import { HeaderAdvantages } from "./HeaderAdvantages"
-import { HeaderTopRight } from "./HeaderTopRight"
+import { HeaderLocation } from "./HeaderLocation"
 import styles from "./HeaderTop.module.css"
 
 export function HeaderTop() {
     return (
         <div className={styles.header__top}>
-            <HeaderAdvantages />
-            <HeaderTopRight />
+            <Container className={styles["header__top-inner"]}>
+                <HeaderAdvantages />
+                <HeaderLocation />
+            </Container>
         </div>
     )
 }

@@ -7,30 +7,26 @@
     }
 
     &__btn {
+        display: flex;
+        justify-content: space-between;
+        
         svg {
             flex-shrink: 0;
         }
     }
 
     &__btn-badge {
-        position: absolute;
-        top: 0;
-        right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 28px;
         height: 28px;
-        border: 1px solid $color-black;
-        border-radius: 50%;
         background-color: $color-white;
-        transform: translate(50%, -50%);
-        transition: color $transition-300, border-color $transition-300;
+        transition: color $transition-300;
 
         .header__btn:hover &,
         .header__btn:focus-visible & {
-            color: $color-dark-carnation;
-            border-color: $color-dark-carnation;
+            color: $color-royal-health;
         }
     }
 }

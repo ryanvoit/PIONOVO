@@ -9,11 +9,9 @@
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 .header__advantage-item {
-  font-size: 16px;
-  line-height: 16px;
   color: #ffffff;
   pointer-events: none;
 }

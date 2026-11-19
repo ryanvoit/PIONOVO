@@ -7,3 +7,6 @@
   gap: 30px;
   align-items: center;
 }
+.header__top-wrapper .header__link {
+  font-size: 13px;
+}

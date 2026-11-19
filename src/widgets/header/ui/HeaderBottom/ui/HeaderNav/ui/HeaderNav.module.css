@@ -23,7 +23,7 @@
   position: relative;
 }
 .main-nav__link:hover, .main-nav__link:focus-visible {
-  color: #ff5773;
+  color: #C2456B;
 }
 .main-nav__link::before {
   width: calc(100% + 36px);

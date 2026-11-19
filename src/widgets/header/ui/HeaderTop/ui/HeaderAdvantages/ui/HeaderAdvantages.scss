@@ -8,12 +8,10 @@
         height: 100%;
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 15px;
     }
 
     &__advantage-item {
-        font-size: 16px;
-        line-height: 16px;
         color: $color-white;
         pointer-events: none;
     }

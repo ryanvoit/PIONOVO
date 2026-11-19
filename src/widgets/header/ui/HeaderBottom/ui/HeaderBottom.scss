@@ -2,10 +2,14 @@
 
 .header {
     &__bottom {
-        width: 100%;
-        height: 60px;
         display: flex;
-        justify-content: space-between;
+        flex-shrink: 0;
+        height: 60px;
+    }
+
+    &__bottom-inner {
+        display: flex;
         align-items: center;
+        min-width: 0;
     }
 }

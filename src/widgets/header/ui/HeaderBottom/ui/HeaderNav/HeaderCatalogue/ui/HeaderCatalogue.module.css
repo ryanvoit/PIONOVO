@@ -18,7 +18,7 @@
   padding: 10px 30px;
   margin: 0;
   width: 200px;
-  border: 2px solid #ff5773;
+  border: 2px solid #C2456B;
   border-radius: 20px;
   background-color: #ffffff;
   z-index: 2;
@@ -27,7 +27,7 @@
   gap: 3px;
   transform: translateY(-20px);
   opacity: 0;
-  pointer-events: 0;
+  pointer-events: none;
   transition: opacity ease-in 0.3s, transform ease-in 0.3s;
 }
 .header__catalogue-list::before {
@@ -45,7 +45,7 @@
   transition: color ease-in 0.3s;
 }
 .header__catalogue-link:hover, .header__catalogue-link:focus-visible {
-  color: #ff5773;
+  color: #C2456B;
 }
 .header__btn-catalogue svg {
   flex-shrink: 0;

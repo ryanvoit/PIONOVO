@@ -21,7 +21,7 @@
         padding: 10px 30px;
         margin: 0;
         width: 200px;
-        border: 2px solid $color-dark-carnation;
+        border: 2px solid $color-royal-health;
         border-radius: 20px;
         background-color: $color-white;
         z-index: 2;
@@ -30,7 +30,7 @@
         gap: 3px;
         transform: translateY(-20px);
         opacity: 0;
-        pointer-events: 0;
+        pointer-events: none;
         transition: opacity $transition-300, transform $transition-300;
 
         &::before {
@@ -51,7 +51,7 @@
 
         &:hover,
         &:focus-visible {
-            color: $color-dark-carnation;
+            color: $color-royal-health;
         }
     }
 

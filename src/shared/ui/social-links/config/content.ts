@@ -1,6 +1,12 @@
-import { InstagramIcon, TelegramIcon, VkIcon, WhatsAppIcon } from "@/shared/assets/icons"
+import {
+    InstagramIcon,
+    MaxIcon,
+    TelegramIcon,
+    VkIcon,
+    WhatsAppIcon,
+} from "@/shared/assets/icons"
 
-export type SocialRole = "instagram" | "telegram" | "whats-app" | "vk"
+export type SocialRole = "instagram" | "telegram" | "whats-app" | "vk" | "max"
 
 export interface SocialLinkItem {
     role: SocialRole
@@ -9,9 +15,10 @@ export interface SocialLinkItem {
 }
 
 export const DEFAULT_LINKS: SocialLinkItem[] = [
-    { role: "instagram", href: "#", title: "Instagram" },
     { role: "telegram", href: "#", title: "Telegram" },
+    { role: "max", href: "#", title: "MAX" },
     { role: "whats-app", href: "#", title: "WhatsApp" },
+    { role: "instagram", href: "#", title: "Instagram" },
     { role: "vk", href: "#", title: "ВКонтакте" },
 ]
 
@@ -20,4 +27,5 @@ export const SOCIAL_ICONS = {
     telegram: TelegramIcon,
     "whats-app": WhatsAppIcon,
     vk: VkIcon,
+    max: MaxIcon,
 }

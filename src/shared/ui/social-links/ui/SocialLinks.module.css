@@ -19,12 +19,12 @@
   align-items: center;
   width: 20px;
   height: 20px;
-  color: #ffffff;
+  color: #000000;
   transition: color ease-in 0.3s;
   position: relative;
 }
 .social__link:hover, .social__link:focus-visible {
-  color: #ff5773;
+  color: #C2456B;
 }
 .social__link:hover .social__icon, .social__link:focus-visible .social__icon {
   transform: scale(1.1);
@@ -40,4 +40,5 @@
 .social__icon {
   flex-shrink: 0;
   transition: transform ease-in 0.3s;
+  transform: scale(1);
 }

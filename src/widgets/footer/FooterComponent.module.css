@@ -48,7 +48,7 @@
   transition: color ease-in 0.3s;
 }
 .footer__link:hover, .footer__link:focus-visible {
-  color: #ff5773;
+  color: #C2456B;
 }
 .footer__link:hover .footer__icon, .footer__link:focus-visible .footer__icon {
   transform: scale(1.25);

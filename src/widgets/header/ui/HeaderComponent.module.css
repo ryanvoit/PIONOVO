@@ -2,36 +2,21 @@
 /* semantic / success */
 /* neutral */
 /*  gradients-brand */
-.header {
-  padding: 0;
-  background-color: #ffffff;
-  position: fixed;
+.header__navigation {
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: #ffffff;
 }
-.header::before {
+.header__navigation::after {
   position: absolute;
   content: "";
   height: 3px;
+  inset: auto 0 0 0;
   background-color: rgba(0, 0, 0, 0.2);
-  width: 100vw;
-  bottom: 0;
-  right: 0;
-}
-.header {
-  /* &--animated {
-      transform: translateY(0);
-  } */
-}
-.header__wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
 .header__link {
   display: flex;
@@ -46,13 +31,13 @@
   color: #000000;
 }
 .header__link:hover, .header__link:focus-visible {
-  color: #ff5773;
+  color: #C2456B;
 }
 .header__link:hover .header__icon, .header__link:focus-visible .header__icon {
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 .header__link:hover .header__icon--white, .header__link:focus-visible .header__icon--white {
-  color: #ff5773;
+  color: #C2456B;
 }
 .header__icon {
   flex-shrink: 0;
@@ -62,5 +47,5 @@
   color: #ffffff;
 }
 .header__icon--white:hover, .header__icon--white:focus-visible {
-  color: #ff5773;
+  color: #C2456B;
 }

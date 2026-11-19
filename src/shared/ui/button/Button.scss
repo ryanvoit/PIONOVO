@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 20px;
+    padding: 0 5px 0 10px;
     border-radius: 10px;
     border: 1px solid $color-black;
     cursor: pointer;
@@ -15,13 +15,13 @@
 
     &:hover,
     &:focus-visible {
-        color: $color-dark-carnation;
-        border-color: $color-dark-carnation;
+        color: $color-royal-health;
+        border-color: $color-royal-health;
     }
 
     &--secondary {
         gap: 10px;
         height: 40px;
-        border: 2px solid $color-dark-carnation;
+        border: 2px solid $color-royal-health;
     }
 }
