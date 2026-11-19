@@ -5,6 +5,7 @@
 .header__contacts {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
 }
 .header__contacts-text {
   font-size: 12px;

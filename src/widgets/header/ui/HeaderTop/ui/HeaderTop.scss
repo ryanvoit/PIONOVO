@@ -9,8 +9,6 @@
         line-height: 16px;
     }
 
-    // ширина, боковые отступы и центрирование приходят от Container —
-    // ровно те же, что у __main и __bottom
     &__top-inner {
         display: flex;
         justify-content: space-between;

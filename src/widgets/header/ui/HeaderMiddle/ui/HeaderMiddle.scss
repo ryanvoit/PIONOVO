@@ -1,25 +1,24 @@
 @use "@styles" as *;
 
 .header {
-    // 44 (__top) + 76 + 60 (__bottom) = 180px — общая высота шапки
     &__main {
         display: flex;
         height: 76px;
-        // разделитель — inset-тень, чтобы линия на всю ширину не отъедала высоту ряда
         box-shadow: inset 0 -1px 0 $color-black-20;
     }
 
     &__main-inner {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 218px minmax(0, 1fr) max-content;
         align-items: center;
-        // без этого Container как flex-элемент не сжимается ниже min-content
-        // и на узких экранах ряд «разъезжается» иначе, чем раньше
+        gap: 30px;
         min-width: 0;
     }
 
     &__main-wrapper {
         display: flex;
+        align-items: center;
         gap: 30px;
-    }
+        flex-shrink: 0;
+    } 
 }

@@ -1,0 +1,9 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.header__search {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+}

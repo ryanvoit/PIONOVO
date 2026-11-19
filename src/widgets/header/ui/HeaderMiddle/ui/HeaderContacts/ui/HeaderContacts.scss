@@ -4,6 +4,8 @@
     &__contacts {
         display: flex;
         flex-direction: column;
+        white-space: nowrap;
+        // flex-shrink: 0;
     }
 
     &__contacts-text {

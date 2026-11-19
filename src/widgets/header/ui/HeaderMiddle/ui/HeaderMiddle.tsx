@@ -3,6 +3,7 @@ import { SocialLinks } from "@/shared/ui/social-links"
 import { HeaderContacts } from "./HeaderContacts"
 import { HeaderMainLink } from "./HeaderMainLink"
 import { HeaderMiddleButtons } from "./HeaderMiddleButtons"
+import { HeaderSearchInput } from "./HeaderSearchInput"
 import styles from "./HeaderMiddle.module.css"
 
 export function HeaderMiddle() {
@@ -10,7 +11,7 @@ export function HeaderMiddle() {
         <div className={styles.header__main}>
             <Container className={styles["header__main-inner"]}>
                 <HeaderMainLink />
-                {/* searchInput */}
+                <HeaderSearchInput />
                 <div className={styles["header__main-wrapper"]}>
                     <HeaderContacts />
                     <SocialLinks />

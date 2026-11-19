@@ -5,6 +5,7 @@
 .header__buttons {
   display: flex;
   gap: 20px;
+  flex-shrink: 0;
 }
 .header__btn {
   display: flex;
