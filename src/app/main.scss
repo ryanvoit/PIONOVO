@@ -1,7 +1,11 @@
 @use "@styles" as *;
 @forward "./fonts.css";
 @forward "./normalize.css";
-@forward "./visually-hidden.css";
+
+// Глобальная утилита: определение одно — миксин в shared/styles
+.visually-hidden {
+  @include visually-hidden;
+}
 
 *,
 *::after,

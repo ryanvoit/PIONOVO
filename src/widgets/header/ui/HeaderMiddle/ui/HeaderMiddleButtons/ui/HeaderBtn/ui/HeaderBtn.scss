@@ -1,0 +1,32 @@
+@use "@styles" as *;
+
+.header__btn {
+    justify-content: space-between;
+
+    svg {
+        flex-shrink: 0;
+    }
+
+    &:hover,
+    &:focus-visible {
+        .header__btn-badge {
+            color: $color-royal-health;
+        }
+    }
+}
+
+.header__btn-label {
+    @include vp-mobile {
+        @include visually-hidden;
+    }
+}
+
+.header__btn-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: $color-white;
+    transition: color $transition-300;
+}

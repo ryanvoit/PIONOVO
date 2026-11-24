@@ -6,28 +6,4 @@
         gap: 20px;
         flex-shrink: 0;
     }
-
-    &__btn {
-        display: flex;
-        justify-content: space-between;
-        
-        svg {
-            flex-shrink: 0;
-        }
-    }
-
-    &__btn-badge {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 28px;
-        height: 28px;
-        background-color: $color-white;
-        transition: color $transition-300;
-
-        .header__btn:hover &,
-        .header__btn:focus-visible & {
-            color: $color-royal-health;
-        }
-    }
 }

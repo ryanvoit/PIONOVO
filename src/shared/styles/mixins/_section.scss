@@ -20,7 +20,7 @@ $section-gap-mobile: 24px;
     padding: $section-py-tablet 0;
   }
 
-  @include responsive($bp-tablet) {
+  @include vp-mobile {
     padding: $section-py-mobile 0;
   }
 }
@@ -38,7 +38,7 @@ $section-gap-mobile: 24px;
     gap: $section-gap-tablet;
   }
 
-  @include responsive($bp-tablet) {
+  @include vp-mobile {
     padding: $section-py-mobile 0;
     gap: $section-gap-mobile;
   }
@@ -58,7 +58,7 @@ $section-gap-mobile: 24px;
     letter-spacing: -1.5px;
   }
 
-  @include responsive($bp-tablet) {
+  @include vp-mobile {
     font-size: rem($fs-3xl);
     letter-spacing: -1px;
   }

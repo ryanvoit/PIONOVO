@@ -8,19 +8,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5px 0 10px;
+  gap: 5px;
+  padding: 0 4px 0 8px;
   border-radius: 10px;
   border: 1px solid #000000;
   cursor: pointer;
   transition: color ease-in 0.3s, border-color ease-in 0.3s;
   position: relative;
+  height: 32px;
 }
 .btn:hover, .btn:focus-visible {
   color: #C2456B;
   border-color: #C2456B;
 }
-.btn--secondary {
-  gap: 10px;
-  height: 40px;
-  border: 2px solid #C2456B;
+@media (max-width: 767px) {
+  .btn {
+    gap: unset;
+    border: 2px solid #C2456B;
+    padding: 0;
+    border-radius: 50%;
+    width: 32px;
+  }
 }

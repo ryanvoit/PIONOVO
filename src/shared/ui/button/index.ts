@@ -1,2 +1,2 @@
 export { Button } from "./Button"
-export type { ButtonProps, ButtonVariant } from "./Button.props"
+export type { ButtonProps } from "./Button.props"

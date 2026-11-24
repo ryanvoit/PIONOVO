@@ -7,7 +7,6 @@ export function HeaderCatalogue() {
     return (
         <div className={styles["header__catalogue-wrapper"]}>
             <Button
-                variant="secondary"
                 className={styles["header__btn-catalogue"]}
             >
                 <span>Каталог</span>

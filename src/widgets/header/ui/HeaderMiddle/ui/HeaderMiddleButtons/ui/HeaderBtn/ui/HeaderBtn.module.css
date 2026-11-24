@@ -1,0 +1,38 @@
+/* semantic / error */
+/* semantic / success */
+/* neutral */
+/*  gradients-brand */
+.header__btn {
+  justify-content: space-between;
+}
+.header__btn svg {
+  flex-shrink: 0;
+}
+.header__btn:hover .header__btn-badge, .header__btn:focus-visible .header__btn-badge {
+  color: #C2456B;
+}
+
+@media (max-width: 767px) {
+  .header__btn-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
+}
+
+.header__btn-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  transition: color ease-in 0.3s;
+}

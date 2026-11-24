@@ -1,42 +1,61 @@
 @use "../variables/breakpoints" as *;
 
-// без нижней границы: $bp-mobile — это опорная ширина макета, а не минимально
-// поддерживаемая. С `min-width: $bp-mobile` на экранах уже 375px мобильные стили
-// отключались и вместо них применялись десктопные
-@mixin vp-mobile {
+@mixin vp-desktop-wide {
+  @media (min-width: $bp-desktop-wide) {
+    @content;
+  }
+}
+
+// Десктоп и всё, что уже него (≤ 1439px)
+@mixin vp-desktop {
+  @media (max-width: $bp-desktop) {
+    @content;
+  }
+}
+
+// Планшет и всё, что уже него (≤ 1023px)
+@mixin vp-tablet {
   @media (max-width: $bp-tablet) {
     @content;
   }
 }
 
-@mixin vp-tablet {
-  @media (min-width: $bp-tablet) and (max-width: $bp-lg) {
+// Только мобильный (≤ 767px)
+@mixin vp-mobile {
+  @media (max-width: $bp-mobile) {
     @content;
   }
 }
 
-@mixin vp-desktop {
-  @media (min-width: $bp-lg) and (max-width: $bp-desktop) {
+// 1024–1439px
+@mixin vp-desktop-only {
+  @media (min-width: #{$bp-tablet + 1px}) and (max-width: $bp-desktop) {
     @content;
   }
 }
 
-@mixin vp-desktop-wide {
-  @media (min-width: $bp-desktop) {
+// 768–1023px
+@mixin vp-tablet-only {
+  @media (min-width: #{$bp-mobile + 1px}) and (max-width: $bp-tablet) {
     @content;
   }
 }
 
-// самостоятельный выбор breakpoints
-@mixin responsive($breakpoint-one, $breakpoint-two: null) {
-  @if $breakpoint-two == null {
-    @media (max-width: $breakpoint-one) {
+@mixin vp-range($min-or-max, $max: null) {
+  @if $max == null {
+    @media (max-width: $min-or-max) {
       @content;
     }
   } @else {
-    @media (min-width: $breakpoint-one) and (max-width: $breakpoint-two) {
+    @media (min-width: $min-or-max) and (max-width: $max) {
       @content;
     }
   }
 }
- 
+
+// Прежнее имя vp-range, оставлено на случай старых вызовов
+@mixin responsive($breakpoint-one, $breakpoint-two: null) {
+  @include vp-range($breakpoint-one, $breakpoint-two) {
+    @content;
+  }
+}

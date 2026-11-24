@@ -6,12 +6,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5px 0 10px;
+    gap: 5px;
+    padding: 0 4px 0 8px;
     border-radius: 10px;
     border: 1px solid $color-black;
     cursor: pointer;
     transition: color $transition-300, border-color $transition-300;
     position: relative;
+    height: 32px;
 
     &:hover,
     &:focus-visible {
@@ -19,9 +21,11 @@
         border-color: $color-royal-health;
     }
 
-    &--secondary {
-        gap: 10px;
-        height: 40px;
+    @include vp-mobile {
+        gap: unset;
         border: 2px solid $color-royal-health;
+        padding: 0;
+        border-radius: 50%;
+        width: 32px;
     }
 }
