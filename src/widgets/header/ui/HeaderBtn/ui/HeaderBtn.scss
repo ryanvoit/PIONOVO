@@ -16,6 +16,9 @@
 }
 
 .header__btn-label {
+    font-size: 16px;
+    line-height: 20px;
+
     @include vp-mobile {
         @include visually-hidden;
     }

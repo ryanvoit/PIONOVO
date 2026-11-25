@@ -1,4 +1,4 @@
-import { HeaderBtn } from "./HeaderBtn"
+import { HeaderBtn } from "@/widgets/header/ui/HeaderBtn"
 import styles from "./HeaderMiddleButtons.module.css"
 
 export function HeaderMiddleButtons() {

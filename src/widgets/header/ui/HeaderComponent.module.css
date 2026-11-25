@@ -14,7 +14,7 @@
 .header__navigation::after {
   position: absolute;
   content: "";
-  height: 3px;
+  height: 2px;
   inset: auto 0 0 0;
   background-color: rgba(0, 0, 0, 0.2);
 }

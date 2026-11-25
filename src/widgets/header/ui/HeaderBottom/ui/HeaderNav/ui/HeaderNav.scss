@@ -11,11 +11,11 @@
         list-style: none;
         display: flex;
         gap: 42px;
-        padding: 20px;
+        padding: 20px 20px 20px 0;
     }
 
     &__link {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 20px;
         color: $color-black;
         transition: color $transition-300;

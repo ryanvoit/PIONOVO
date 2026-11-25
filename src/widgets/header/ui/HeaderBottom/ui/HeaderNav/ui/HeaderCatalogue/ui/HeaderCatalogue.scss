@@ -6,7 +6,8 @@
     &__catalogue-wrapper {
         position: relative;
 
-        &:hover #{$root}__catalogue-list {
+        &:hover #{$root}__catalogue-list,
+        &:focus-visible #{$root}__catalogue-list {
             opacity: 1;
             transform: translateY(0);
             pointer-events: all;
@@ -52,12 +53,6 @@
         &:hover,
         &:focus-visible {
             color: $color-royal-health;
-        }
-    }
-
-    &__btn-catalogue {
-        svg {
-            flex-shrink: 0;
         }
     }
 }

@@ -5,4 +5,5 @@ export const CATALOGUE_LINKS: readonly string[] = [
     "Пионы поштучно",
     "Пионы в коробке",
     "Пионы в сумке",
+    "Букет невесты"
 ]

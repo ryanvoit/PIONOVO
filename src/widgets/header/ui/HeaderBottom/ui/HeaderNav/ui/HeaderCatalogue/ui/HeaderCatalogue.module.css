@@ -5,7 +5,7 @@
 .header__catalogue-wrapper {
   position: relative;
 }
-.header__catalogue-wrapper:hover .header__catalogue-list {
+.header__catalogue-wrapper:hover .header__catalogue-list, .header__catalogue-wrapper:focus-visible .header__catalogue-list {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
@@ -46,7 +46,4 @@
 }
 .header__catalogue-link:hover, .header__catalogue-link:focus-visible {
   color: #C2456B;
-}
-.header__btn-catalogue svg {
-  flex-shrink: 0;
 }

@@ -1,6 +1,6 @@
 import styles from "./HeaderNav.module.css"
 import { NAV_LINKS } from "../config/links"
-import { HeaderCatalogue } from "../HeaderCatalogue"
+import { HeaderCatalogue } from "./HeaderCatalogue"
 
 export function HeaderNav() {
     return (

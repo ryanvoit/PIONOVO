@@ -1,17 +1,11 @@
-import { BurgerIcon } from "@/shared/assets/icons"
-import { Button } from "@/shared/ui/button"
+import { HeaderBtn } from "@/widgets/header/ui/HeaderBtn"
 import { CATALOGUE_LINKS } from "../config/content"
 import styles from "./HeaderCatalogue.module.css"
 
 export function HeaderCatalogue() {
     return (
         <div className={styles["header__catalogue-wrapper"]}>
-            <Button
-                className={styles["header__btn-catalogue"]}
-            >
-                <span>Каталог</span>
-                <BurgerIcon />
-            </Button>
+            <HeaderBtn role="catalogue" />
             <ul className={styles["header__catalogue-list"]}>
                 {CATALOGUE_LINKS.map((label) => (
                     <li key={label}>
